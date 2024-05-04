@@ -11,6 +11,14 @@ app.get("/api/users", (req,res) =>{
     return res.json(users);
 });
 
+app.get("/", (req,res) =>{
+    const HTML = `
+    <h1>Welcome Bro </h1><br>
+    <h2>You are Here Develop Someting</h2>
+    `;
+    res.send(HTML);
+});
+
 
 app.get("/users", (req,res) =>{
     const HTML = `
